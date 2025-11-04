@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Outer glow circle -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="95"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1.5"
+        android:alpha="0.3" />
+
+    <!-- Middle ring -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="75"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFA500"
+        android:strokeWidth="2"
+        android:alpha="0.5" />
+
+    <!-- Inner bright ring -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="55"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF6B00"
+        android:strokeWidth="2.5" />
+
+    <!-- Core glowing circle (very bright) -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="45"
+        android:fillColor="#FFE135"
+        android:alpha="0.9" />
+
+    <!-- Bright center core -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="40"
+        android:fillColor="#FFFF99"
+        android:alpha="0.7" />
+
+    <!-- Arc segments (reactor details) -->
+    <!-- Top segment -->
+    <path
+        android:pathData="M 100,55 A 45,45 0 0,1 145,145"
+        android:strokeColor="#FFB300"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round" />
+
+    <!-- Right segment -->
+    <path
+        android:pathData="M 145,100 A 45,45 0 0,1 55,100"
+        android:strokeColor="#FFB300"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round" />
+
+    <!-- Bottom segment -->
+    <path
+        android:pathData="M 55,100 A 45,45 0 0,1 145,55"
+        android:strokeColor="#FFB300"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round" />
+
+    <!-- Mercedes-Benz Logo (simplified) at center -->
+    <!-- Circle around logo -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="20"
+        android:fillColor="@android:color/white"
+        android:alpha="0.9" />
+
+    <!-- Mercedes logo - three-pointed star container circle -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="18"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#00008B"
+        android:strokeWidth="1.5" />
+
+    <!-- Mercedes logo - top point (vertical line) -->
+    <path
+        android:pathData="M 100,84 L 100,92"
+        android:strokeColor="#00008B"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Mercedes logo - bottom left point -->
+    <path
+        android:pathData="M 91.4,108 L 86,112"
+        android:strokeColor="#00008B"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Mercedes logo - bottom right point -->
+    <path
+        android:pathData="M 108.6,108 L 114,112"
+        android:strokeColor="#00008B"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Center dot -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="1.5"
+        android:fillColor="#00008B" />
+
+    <!-- Additional inner rings for depth -->
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="30"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1"
+        android:alpha="0.6" />
+
+    <circle
+        android:cx="100"
+        android:cy="100"
+        android:r="20"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFA500"
+        android:strokeWidth="0.8"
+        android:alpha="0.4" />
+
+</vector>

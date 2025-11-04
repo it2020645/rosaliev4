@@ -7,17 +7,16 @@
     android:background="#0A0E27"
     tools:context=".MainActivity">
 
-    <!-- Iron Man Reactor Display -->
-    <ImageView
-        android:id="@+id/ironmanReactor"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ironman_reactor"
-        android:contentDescription="Iron Man Reactor with Mercedes Logo"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Animated Iron Man Reactor View -->
+    <com.mercedes.rosaliev4.IronManReactorView
+        android:id="@+id/reactorView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@id/titleText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <!-- Title -->
     <TextView
@@ -26,24 +25,27 @@
         android:layout_height="wrap_content"
         android:text="IRON MAN REACTOR"
         android:textColor="#FFD700"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ironmanReactor" />
+        app:layout_constraintTop_toBottomOf="@id/reactorView"
+        app:layout_constraintBottom_toTopOf="@id/subtitleText" />
 
     <!-- Subtitle -->
     <TextView
         android:id="@+id/subtitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MERCEDES-BENZ"
+        android:text="MERCEDES-BENZ POWER CORE"
         android:textColor="#FFA500"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleText" />
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
